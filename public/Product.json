@@ -1,0 +1,38 @@
+[
+  {
+      "id": 1,
+      "productName": "Wedding Ring",
+      "productPrice": 599.99,
+      "productImg": "https://i.ibb.co/b3709sK/Banner-mobile-12-e7a756b1-041e-4d33-a5f0-567e1f189970.webp"
+  },
+  {
+      "id": 2,
+      "productName": "Bridal Gown",
+      "productPrice": 1299.99,
+      "productImg": "https://i.ibb.co/VJpDvz9/Photo-of-a-bridal-gown-on-manikin-width-800-fotor-20231006235152.jpg"
+  },
+  {
+      "id": 3,
+      "productName": "Wedding Cake",
+      "productPrice": 99.99,
+      "productImg": "https://i.ibb.co/7pgN4M2/Pink-Watercolour-2-1000x1000.jpg"
+  },
+  {
+      "id": 4,
+      "productName": "Bride Heel",
+      "productPrice": 49.99,
+      "productImg": "https://i.ibb.co/zSSDFd8/d833ae00a5817d100b7db3b4c1498c08.jpg"
+  },
+  {
+      "id": 5,
+      "productName": "Wedding Flower",
+      "productPrice": 79.99,
+      "productImg": "https://i.ibb.co/GnggXJj/Brogen-Jessup-Photography-01-c9673284ee8144c7a65c9f983349cd1f.jpg"
+  },
+  {
+      "id": 6,
+      "productName": "Wedding Crown",
+      "productPrice": 299.99,
+      "productImg": "https://i.ibb.co/p1DYzXY/Paris-Hilton-Wedding-Day-Crown.jpg"
+  }
+]

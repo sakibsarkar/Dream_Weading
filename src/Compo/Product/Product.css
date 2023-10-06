@@ -1,0 +1,46 @@
+.img img {
+    width: 360px;
+}
+
+.productName {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.price {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.buyBtn {
+    background: #767b67;
+    font-size: 20px;
+    border: 2px solid #767b6700;
+    padding: 5px 13px;
+    color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buyBtn:hover {
+    background: transparent;
+    border: 2px solid #767b67;
+    color: #767b67;
+
+}
+
+.productCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+}

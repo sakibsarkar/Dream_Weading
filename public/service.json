@@ -31,14 +31,14 @@
     "id": 5,
     "serviceName": "HONEYMOONS",
     "icon": "https://i.ibb.co/wyrZx8L/si-6.png",
-    "image": "https://i.ibb.co/4YJs3q0/service-grid-5.jpg",
+    "image": "https://i.ibb.co/fkkSwCh/honeymoon-packages-fotor-20231006225112.jpg",
     "description": "Embark on the journey of a lifetime with our honeymoon planning services."
   },
   {
     "id": 6,
     "serviceName": "WEDDING CAKE",
     "icon": "https://i.ibb.co/10SrFFW/ci-4.png",
-    "image": "https://i.ibb.co/fkkSwCh/honeymoon-packages-fotor-20231006225112.jpg",
+    "image": "https://i.ibb.co/4YJs3q0/service-grid-5.jpg",
     "description": "Indulge in sweetness with our exquisite wedding cake service."
   }
 ]
