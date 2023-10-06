@@ -1,0 +1,44 @@
+.bannerCon {
+    height: 92vh;
+    background-image: url("https://i.ibb.co/r61FR8h/HomeBG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: max-content;
+    gap: 10px;
+
+}
+
+.welcome img {
+    width: 66px;
+}
+
+.welcome h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.txt h1 {
+    font-size: 80px;
+    color: white;
+    font-weight: 400;
+}
+
+.txt p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}

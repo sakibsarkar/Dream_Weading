@@ -1,0 +1,91 @@
+nav {
+    background-color: white;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #767b67;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 43px;
+}
+
+nav ul li .links {
+    color: #0d0d0d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+
+/* active route style */
+nav ul li .active {
+    position: relative;
+}
+
+nav ul li .active::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: -21px;
+
+
+}
+
+/* hover effect styling */
+
+
+nav ul li {
+    position: relative;
+
+}
+
+nav ul li::after {
+
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    background-color: black;
+    border-radius: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: -21px;
+    transition: 0.3s;
+
+}
+
+nav ul li:hover::after {
+    width: 5px;
+    height: 5px;
+}
+
+
+.authentication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #0d0d0d;
+
+}
+
+.authentication .authLinks {
+    color: #0d0d0d;
+}
