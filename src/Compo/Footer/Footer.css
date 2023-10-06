@@ -1,0 +1,114 @@
+footer {
+    padding: 50px 390px;
+    background-color: #3b3e33;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.footerHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+    padding: 50px 0;
+    margin: 0 0 50px 0;
+    border-bottom: 1px solid rgb(118, 118, 118);
+    border-top: 1px solid rgb(118, 118, 118);
+    color: rgba(255, 255, 255, 0.729);
+}
+
+.heroItem {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroItem>div {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heroItem>div>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 100px;
+}
+
+.left h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+
+.left p {
+    color: rgb(217, 218, 219);
+
+}
+
+.mid {
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid input {
+    height: 21px;
+    width: 291px;
+    border: none;
+    outline: none;
+    padding: 5px 0 5px 22px;
+    background: #5f605c;
+    color: white;
+}
+
+.mid input::placeholder {
+    color: rgb(255, 255, 255);
+
+
+}
+
+.mid button {
+    height: 31px;
+    background-color: #708339;
+    color: #3b3e33;
+    width: 38px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+.right .socialLinks {
+    background-color: #5b5b59;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #9da599;
+}
