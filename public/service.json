@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "serviceName": "PHOTO & VIDEO",
+    "imageSrc": "https://i.ibb.co/SNVc1rT/si-1.png",
+    "description": "Let our expert photographers and videographers turn your wedding into a visual masterpiece."
+  },
+  {
+    "id": 2,
+    "serviceName": "CATERING",
+    "imageSrc": "https://i.ibb.co/1Mnf6Zh/si-3.png",
+    "description": "Our catering service is dedicated to delighting your senses and elevating your wedding experience."
+  },
+  {
+    "id": 3,
+    "serviceName": "LIVE MUSIC AND DJ",
+    "imageSrc": "https://i.ibb.co/0YyNQ7K/si-4.png",
+    "description": "Elevate the rhythm of your wedding with our live music and DJ services."
+  },
+  {
+    "id": 4,
+    "serviceName": "BRIDE MAKEUP",
+    "imageSrc": "https://i.ibb.co/9TDLnW8/si-2.png",
+    "description": "Our bridal makeup services are dedicated to making you feel confidently beautiful on your special day."
+  },
+  {
+    "id": 5,
+    "serviceName": "HONEYMOONS",
+    "imageSrc": "https://i.ibb.co/wyrZx8L/si-6.png",
+    "description": "Embark on the journey of a lifetime with our honeymoon planning services."
+  },
+  {
+    "id": 6,
+    "serviceName": "WEDDING CAKE",
+    "imageSrc": "https://i.ibb.co/10SrFFW/ci-4.png",
+    "description": "Indulge in sweetness with our exquisite wedding cake service."
+  }
+]

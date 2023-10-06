@@ -1,6 +1,6 @@
 import "./index.css";
-import Home from "./assets/Compo/Home/Home";
-import HomePageContent from "./assets/Compo/HomePageContent/HomePageContent";
+import Home from "./Compo/Home/Home";
+import HomePageContent from "./Compo/HomePageContent/HomePageContent";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
