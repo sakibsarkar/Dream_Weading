@@ -1,14 +1,27 @@
 import "./Service.css";
+import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
-    const { serviceName, imageSrc, description } = service ? service : {}
+    const { serviceName, icon, image, description } = service ? service : {}
     return (
-        <div className="service">
-            <img src={imageSrc} alt="" />
-            <h2>{serviceName}</h2>
-            <p>{description}</p>
-            <button>Veiw</button>
-        </div>
+        <Link>
+
+            <div className="service">
+                <img src={image} alt="" />
+                <div className="serviceName">
+
+                    <img src={icon} alt="" />
+
+
+                    <p>{serviceName}</p>
+                </div>
+
+                <div className="btn">
+                    <button className="view">View Details</button>
+                </div>
+            </div>
+        </Link>
+
     );
 };
 

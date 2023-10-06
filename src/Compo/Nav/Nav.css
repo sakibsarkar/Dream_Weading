@@ -36,13 +36,12 @@ nav ul li .active {
 nav ul li .active::after {
     content: "";
     position: absolute;
-    height: 5px;
-    width: 5px;
+    height: 1px;
+    width: 90%;
     background-color: black;
     border-radius: 50%;
-    left: 50%;
-    right: 50%;
-    bottom: -21px;
+    left: 0;
+    bottom: -10px;
 
 
 }

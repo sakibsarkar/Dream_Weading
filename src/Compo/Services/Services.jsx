@@ -3,7 +3,7 @@ import Service from "../Service/Service";
 import { useEffect, useState } from "react";
 
 const Services = () => {
-    const [myservices,setMyServices] = useState([])
+    const [myservices, setMyServices] = useState([])
     useEffect(() => {
         fetch("/public/service.json")
             .then(res => res.json())
@@ -18,7 +18,7 @@ const Services = () => {
 
             <div className="allService">
                 {
-                    myservices.map(service=><Service key={service.key} service={service}></Service> )
+                    myservices.map(service => <Service key={service.id} service={service}></Service>)
                 }
 
 

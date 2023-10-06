@@ -6,6 +6,7 @@ const HomePageContent = () => {
         <>
             <Banner></Banner>
             <Services></Services>
+           
         </>
     );
 };
