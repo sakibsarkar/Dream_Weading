@@ -6,7 +6,7 @@ const Service = ({ service }) => {
     return (
         <Link>
 
-            <div className="service" data-aos="fade-left">
+            <div className="service" data-aos="fade-up">
                 <img src={image} alt="" />
                 <div className="serviceName">
 

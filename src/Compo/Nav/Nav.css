@@ -12,7 +12,7 @@ nav h1 {
     color: #767b67;
 }
 
-nav ul {
+nav .navLinks {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,3 +105,115 @@ nav ul li:hover::after {
 .user p {
     font-size: 18px;
 }
+
+.Xsection {
+    display: none;
+}
+
+.menubar {
+    display: none;
+    background: #e6e7e7;
+    padding: 42px 12px;
+    border-radius: 13px;
+}
+
+.Xicon {
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 400px) and (max-width: 650px) {
+
+    nav {
+        position: relative;
+        padding: 30px;
+    }
+
+    nav .navLinks {
+        display: none;
+
+
+    }
+
+    nav h1 {
+        display: none;
+    }
+
+    .menubar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        left: 25px;
+        bottom: -230px;
+        z-index: 99;
+
+    }
+
+    .Xicon {
+        font-size: 20px;
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 720px) {
+    nav {
+        position: relative;
+        padding: 30px;
+    }
+
+    nav .navLinks {
+        display: none;
+
+
+    }
+
+    .menubar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        left: 25px;
+        bottom: -230px;
+        z-index: 99;
+
+    }
+
+    .Xicon {
+        font-size: 20px;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    nav {
+        flex-direction: column;
+        padding: 30px 50px;
+        gap: 20px;
+    }
+
+    .Xsection {
+        display: flex;
+    }
+
+    .Ysection {
+        display: none;
+    }
+
+    .serviceCon {
+        padding: 70px 0;
+    }
+
+    .allService {
+        grid-template-columns: repeat(2, 360px)
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {}
+
+@media screen and (min-width: 1921px) {}

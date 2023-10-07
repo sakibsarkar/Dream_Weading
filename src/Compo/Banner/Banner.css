@@ -13,6 +13,10 @@
 
 }
 
+.mrX {
+    display: none;
+}
+
 .welcome {
     display: flex;
     justify-content: center;
@@ -32,7 +36,8 @@
     font-weight: 400;
 }
 
-.txt h1 {
+.bannerTitle,
+.Xtitle {
     font-size: 80px;
     color: white;
     font-weight: 400;
@@ -42,3 +47,97 @@
     color: white;
     font-family: 'Raleway', sans-serif;
 }
+
+.Xtitle {
+    display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .mrY {
+        display: none;
+    }
+
+    .mrX {
+        display: flex;
+    }
+
+    .bannerCon {
+        height: 303px;
+        justify-content: start;
+    }
+
+    .welcome h2 {
+        font-size: 19px;
+    }
+
+
+    .bannerTitle {
+        font-size: 22px;
+    }
+
+
+
+
+
+    .txt p {
+        width: 300px;
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 930px) {
+
+    .mrY {
+        display: none;
+    }
+
+    .mrX {
+        display: flex;
+    }
+
+    .bannerCon {
+        height: 303px;
+        justify-content: start;
+    }
+
+
+    .bannerTitle {
+        font-size: 33px;
+    }
+
+    .txt p {
+        width: 300px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 930px) and (max-width: 1280px) {
+
+
+    .mrY {
+        display: none;
+    }
+
+    .mrX {
+        display: flex;
+    }
+
+    .bannerTitle {
+        font-size: 53px;
+    }
+
+    .bannerCon {
+        height: 350px;
+    }
+
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {}
+
+@media screen and (min-width: 1921px) {}

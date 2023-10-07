@@ -1,11 +1,14 @@
 import "./Nav.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import { RxCross2 } from "react-icons/rx";
 import { Oval } from "react-loader-spinner";
 import { NavLink } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
 const Nav = () => {
     const { user, loading, signOutUser } = useContext(UserContext)
+    const [click, setClick] = useState(false)
 
     const LogOut = () => {
         signOutUser()
@@ -16,13 +19,31 @@ const Nav = () => {
     return (
         <nav>
 
+            <div className="Xicon" onClick={() => setClick(!click)}>{click ? <RxCross2></RxCross2> : <AiOutlineMenu></AiOutlineMenu>}</div>
+
             <h1>DREAM WEDDING</h1>
-            <ul>
+            <ul className="navLinks">
                 <li><NavLink className={"links"} to={"/"}>Home</NavLink></li>
                 <li><NavLink className={"links"} to={"/shop"}>Our Shop</NavLink></li>
                 <li><NavLink className={"links"} to={"/contact"}>Contact</NavLink></li>
                 <li><NavLink className={"links"} to={"/photograps"}>Potographs</NavLink></li>
+
+                <div className="authentication Xsection">
+                    <NavLink to={"/login"} className={"authLinks"}>Log in</NavLink>
+                    <span>|</span>
+                    <NavLink to={"/signup"} className={"authLinks"}>Sign up</NavLink>
+                </div>
             </ul>
+
+
+            {
+                click ? <ul className="menubar">
+                    <li><NavLink className={"links"} to={"/"}>Home</NavLink></li>
+                    <li><NavLink className={"links"} to={"/shop"}>Our Shop</NavLink></li>
+                    <li><NavLink className={"links"} to={"/contact"}>Contact</NavLink></li>
+                    <li><NavLink className={"links"} to={"/photograps"}>Potographs</NavLink></li>
+                </ul> : ""
+            }
 
 
             {
@@ -60,7 +81,7 @@ const Nav = () => {
                         </div>
 
                         :
-                        <div className="authentication">
+                        <div className="authentication Ysection">
                             <NavLink to={"/login"} className={"authLinks"}>Log in</NavLink>
                             <span>|</span>
                             <NavLink to={"/signup"} className={"authLinks"}>Sign up</NavLink>
