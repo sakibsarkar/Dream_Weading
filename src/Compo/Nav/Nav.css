@@ -29,11 +29,11 @@ nav ul li .links {
 
 
 /* active route style */
-nav ul li .active {
+.active {
     position: relative;
 }
 
-nav ul li .active::after {
+.active::after {
     content: "";
     position: absolute;
     height: 1px;
@@ -85,6 +85,23 @@ nav ul li:hover::after {
 
 }
 
-.authentication .authLinks {
+.authLinks {
     color: #0d0d0d;
+}
+
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user img {
+    width: 42px;
+    border-radius: 50%;
+}
+
+.user p {
+    font-size: 18px;
 }

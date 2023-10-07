@@ -1,0 +1,96 @@
+.logInCon {
+    width: 510px;
+    /* height: 600px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto;
+    background-color: rgb(245 245 245);
+    border-radius: 5px;
+    padding: 20px 0;
+
+}
+
+form {
+    padding: 12px 67px;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+form .inputCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+form .inputs {
+    padding: 5px 10px;
+    width: 333px;
+    font-size: 15px;
+    height: 24px;
+    outline: none;
+    border: 1px solid #45483b;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.heading {
+    font-family: 'Dancing Script', cursive;
+    width: 353px;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 51px;
+    margin: 0 0 14px 0;
+    color: #484c39;
+}
+
+form button {
+    width: 355px;
+    border: none;
+    padding: 14px 0px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid black;
+
+}
+
+form button:hover {
+    border: 1px solid black;
+    color: black;
+    background: white;
+
+}
+
+.toggle h1 {
+    font-family: 'Raleway', sans-serif;
+    ;
+    font-size: 18px;
+}
+
+.myMedia {
+    border-top: 1px solid rgb(86, 86, 86);
+    padding: 20px 0 0 0;
+
+}
+
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Dancing Script', cursive;
+
+*/

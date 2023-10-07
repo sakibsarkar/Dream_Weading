@@ -1,0 +1,30 @@
+.socialCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.socialSite {
+    border: 1px solid black;
+    transition: 0.3s;
+    width: 331px;
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.socialSite:hover {
+    background-color: black;
+    color: white;
+}
+
+.socialSite>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 60%;
+
+}

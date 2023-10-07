@@ -1,8 +1,12 @@
 import "./index.css";
+import AuthenticationPotector from "./Compo/AuthenticationPotector/AuthenticationPotector";
 import Home from "./Compo/Home/Home";
 import HomePageContent from "./Compo/HomePageContent/HomePageContent";
+import Login from "./Compo/Login/Login";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import SignUp from "./Compo/SignUp/SignUp";
+import UserAuth from "./Compo/UserAuth/UserAuth";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const routes = createBrowserRouter([{
@@ -12,12 +16,23 @@ const routes = createBrowserRouter([{
     {
       path: "/",
       element: <HomePageContent></HomePageContent>
+    },
+    {
+      path: "/login",
+      element: <AuthenticationPotector><Login></Login></AuthenticationPotector>
+    }
+    ,
+    {
+      path: "/signup",
+      element: <AuthenticationPotector><SignUp></SignUp></AuthenticationPotector>
     }
   ]
 }])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={routes}></RouterProvider>
+    <UserAuth>
+      <RouterProvider router={routes}></RouterProvider>
+    </UserAuth>
   </React.StrictMode>,
 )
