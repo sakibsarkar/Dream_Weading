@@ -3,8 +3,11 @@ import AuthenticationPotector from "./Compo/AuthenticationPotector/Authenticatio
 import Home from "./Compo/Home/Home";
 import HomePageContent from "./Compo/HomePageContent/HomePageContent";
 import Login from "./Compo/Login/Login";
+import PrivateRoute from "./Compo/PrivateRoute/PrivateRoute";
+import Products from "./Compo/Products/Products";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Services from "./Compo/Services/Services";
 import SignUp from "./Compo/SignUp/SignUp";
 import UserAuth from "./Compo/UserAuth/UserAuth";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -19,12 +22,16 @@ const routes = createBrowserRouter([{
     },
     {
       path: "/login",
-      element: <AuthenticationPotector><Login></Login></AuthenticationPotector>
+      element: <Login></Login>
     }
     ,
     {
       path: "/signup",
-      element: <AuthenticationPotector><SignUp></SignUp></AuthenticationPotector>
+      element: <SignUp></SignUp>
+    },
+    {
+      path: "/shop",
+      element: <PrivateRoute><Products></Products></PrivateRoute>
     }
   ]
 }])

@@ -8,6 +8,7 @@ const UserAuth = ({ children }) => {
 
     const [user, setUser] = useState({})
     const [loading, setLoading] = useState(true)
+    const [location, setlocation] = useState({})
     const googleLogIn = () => {
         setLoading(true)
         const provider = new GoogleAuthProvider()
@@ -50,7 +51,9 @@ const UserAuth = ({ children }) => {
         signOutUser,
         loading,
         user,
-        setUser
+        setUser,
+        setlocation,
+        location
     }
 
 

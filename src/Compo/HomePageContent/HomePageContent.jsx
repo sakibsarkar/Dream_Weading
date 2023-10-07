@@ -7,8 +7,6 @@ const HomePageContent = () => {
         <>
             <Banner></Banner>
             <Services></Services>
-            <Products></Products>
-
         </>
     );
 };

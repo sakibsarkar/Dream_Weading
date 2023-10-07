@@ -6,8 +6,7 @@ const Service = ({ service }) => {
     return (
         <Link>
 
-            <div className="service" data-aos="fade-left"
-                data-aos-mirror="true">
+            <div className="service" data-aos="fade-left">
                 <img src={image} alt="" />
                 <div className="serviceName">
 

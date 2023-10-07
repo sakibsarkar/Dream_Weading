@@ -1,5 +1,6 @@
 import "./Nav.css";
 import { useContext } from "react";
+import { Oval } from "react-loader-spinner";
 import { NavLink } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
@@ -18,7 +19,7 @@ const Nav = () => {
             <h1>DREAM WEDDING</h1>
             <ul>
                 <li><NavLink className={"links"} to={"/"}>Home</NavLink></li>
-                <li><NavLink className={"links"} to={"/Services"}>Services</NavLink></li>
+                <li><NavLink className={"links"} to={"/shop"}>Our Shop</NavLink></li>
                 <li><NavLink className={"links"} to={"/contact"}>Contact</NavLink></li>
                 <li><NavLink className={"links"} to={"/photograps"}>Potographs</NavLink></li>
             </ul>
@@ -28,7 +29,19 @@ const Nav = () => {
 
                 loading ?
 
-                    "coming" :
+                    <Oval
+                        height={40}
+                        width={40}
+                        color="#4fa94d"
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={true}
+                        ariaLabel='oval-loading'
+                        secondaryColor="#4fa94d"
+                        strokeWidth={2}
+                        strokeWidthSecondary={2}
+
+                    /> :
 
                     user ?
 

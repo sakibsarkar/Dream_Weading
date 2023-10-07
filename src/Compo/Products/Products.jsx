@@ -11,7 +11,7 @@ const Products = () => {
             .then(data => setProducts(data))
     }, [])
     return (
-        <div style={{ padding: "75px 390px", margin: "150px 0 0 0" }}>
+        <div style={{ padding: "120px 390px"}}>
 
             <div className="productHead">
                 <h1 className="productTitle">SPECIAL PRODUCT FOR YOUR SPECIAL DAY</h1>

@@ -6,7 +6,6 @@ import { UserContext } from "../UserAuth/UserAuth";
 const Services = () => {
     const [myservices, setMyServices] = useState([])
     const { user } = useContext(UserContext)
-    console.log(user)
     useEffect(() => {
         fetch("/public/service.json")
             .then(res => res.json())

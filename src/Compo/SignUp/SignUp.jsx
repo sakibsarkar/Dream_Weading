@@ -2,11 +2,12 @@ import SocialSignup from "../SocialSignup/SocialSignup";
 import toast, { Toaster } from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
 const SignUp = () => {
-    const { createUserWithEmail, user, setUser } = useContext(UserContext)
+    const { createUserWithEmail, user, setUser, location } = useContext(UserContext)
+    const navigate = useNavigate()
     const handleRegister = (e) => {
         e.preventDefault()
         const { email, password, name, confirm } = e.target
@@ -30,6 +31,7 @@ const SignUp = () => {
 
         createUserWithEmail(email.value, password.value)
             .then(res => {
+                navigate(location?.state ? location.state : "/")
                 updateProfile(res.user, {
                     displayName: name.value
                 })

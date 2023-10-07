@@ -2,20 +2,26 @@ import "./Login.css";
 import SocialSignup from "../SocialSignup/SocialSignup";
 import toast, { Toaster } from "react-hot-toast";
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
 const Login = () => {
-    const { signInWithEmail } = useContext(UserContext)
+    const { signInWithEmail, setlocation } = useContext(UserContext)
+    const location = useLocation()
+
+    setlocation(location)
+    const navigate = useNavigate()
+
+    console.clear()
     const handlesubmit = (e) => {
-       
+
         e.preventDefault()
         const { email, password } = e.target
-
-       
-
         signInWithEmail(email.value, password.value)
-            .then(res => console.log(res))
+            .then(res => {
+                navigate(location?.state ? location.state : "/")
+            })
+
             .catch(err => toast.error("invalid email or password"))
 
 
@@ -41,18 +47,11 @@ const Login = () => {
 
 
             <div className="myMedia">
-                <SocialSignup></SocialSignup>
+                <SocialSignup location={location}></SocialSignup>
 
             </div>
 
             <Toaster
-
-
-
-
-
-
-
                 position="top-center"
                 reverseOrder={false}
             />
