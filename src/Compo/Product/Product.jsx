@@ -8,7 +8,9 @@ const Product = ({ product }) => {
         toast.success(`${NameProduct} successfully purchased`)
     }
     return (
-        <div className="productCard">
+        <div className="productCard" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" data-aos-mirror="true">
             <div className="img">
                 <img src={productImg} alt="" />
             </div>

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer>
+            
 
             <div className="footerHead">
                 <h1>DREAM WEDDING</h1>

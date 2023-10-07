@@ -2,6 +2,8 @@ footer {
     padding: 50px 390px;
     background-color: #3b3e33;
     font-family: 'Raleway', sans-serif;
+    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+
 }
 
 
