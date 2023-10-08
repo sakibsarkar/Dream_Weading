@@ -1,7 +1,12 @@
 import "./Packages.css";
+import toast, { Toaster } from "react-hot-toast";
 import { GiVanillaFlower } from "react-icons/gi";
 
 const Packages = () => {
+
+    const handlePackage = (packName) => {
+        toast.success(`${packName} Package purchased successfully`)
+    }
     return (
         <div>
             <div className="priceBanner">
@@ -34,7 +39,7 @@ const Packages = () => {
                     </div>
 
 
-                    <button className="getPack">GET PACKAGE</button>
+                    <button className="getPack" onClick={() => handlePackage("BASIC")}>GET PACKAGE</button>
                 </div>
 
 
@@ -61,13 +66,13 @@ const Packages = () => {
                     </div>
 
 
-                    <button className="getPack">GET PACKAGE</button>
+                    <button className="getPack" onClick={() => handlePackage("STANDARD")}>GET PACKAGE</button>
                 </div>
 
 
 
 
-                <div className="package">
+                <div className="package last">
                     <div className="picture">
                         <img src="https://i.ibb.co/9bJGQCr/feature-5.jpg" alt="" />
                     </div>
@@ -90,10 +95,12 @@ const Packages = () => {
                     </div>
 
 
-                    <button className="getPack">GET PACKAGE</button>
+                    <button className="getPack" onClick={() => handlePackage("PREMIUM")}>GET PACKAGE</button>
                 </div>
 
             </div>
+
+            <Toaster></Toaster>
         </div>
     );
 };
