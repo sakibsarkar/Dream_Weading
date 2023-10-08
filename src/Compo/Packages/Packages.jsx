@@ -1,8 +1,12 @@
 import "./Packages.css";
 import toast, { Toaster } from "react-hot-toast";
+import { useContext } from "react";
 import { GiVanillaFlower } from "react-icons/gi";
+import { UserContext } from "../UserAuth/UserAuth";
 
 const Packages = () => {
+
+
 
     const handlePackage = (packName) => {
         toast.success(`${packName} Package purchased successfully`)

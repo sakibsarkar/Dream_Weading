@@ -10,6 +10,7 @@ const UserAuth = ({ children }) => {
     const [loading, setLoading] = useState(true)
     const [waitForUser, setWaitForUser] = useState(true)
     const [location, setlocation] = useState({})
+    const [toast, setToast] = useState(null)
     const googleLogIn = () => {
         setLoading(true)
         const provider = new GoogleAuthProvider()
@@ -68,7 +69,9 @@ const UserAuth = ({ children }) => {
         setUser,
         setlocation,
         location,
-        setWaitForUser
+        setWaitForUser,
+        toast,
+        setToast
     }
 
 

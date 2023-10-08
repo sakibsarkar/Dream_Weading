@@ -8,7 +8,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
 const SignUp = () => {
-    const { createUserWithEmail, user, setUser, location, setWaitForUser } = useContext(UserContext)
+    const { createUserWithEmail, user, setUser, location, setWaitForUser, setToast } = useContext(UserContext)
     const [eye, SetEye] = useState(false)
     const navigate = useNavigate()
 
@@ -35,7 +35,7 @@ const SignUp = () => {
         createUserWithEmail(email.value, password.value)
             .then(res => {
                 navigate(location?.state ? location.state : "/")
-                toast.success("succesfully loged in")
+                setToast(toast.success("succesfully Sign in"))
 
                 updateProfile(res.user, {
                     displayName: name.value,

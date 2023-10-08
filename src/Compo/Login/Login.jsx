@@ -8,7 +8,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
 const Login = () => {
-    const { signInWithEmail, setlocation, user } = useContext(UserContext)
+    const { signInWithEmail, setlocation, user, setToast } = useContext(UserContext)
     const location = useLocation()
     const [eye, SetEye] = useState(false)
     setlocation(location)
@@ -20,13 +20,14 @@ const Login = () => {
         const { email, password } = e.target
         signInWithEmail(email.value, password.value)
             .then(res => {
-                toast.success("successfuly singedIn")
+                setToast(toast.success("successfuly singedIn"))
                 navigate(location?.state ? location.state : "/")
             })
             .catch(err => toast.error("invalid email or password"))
 
 
     }
+
     return (
         <>
 

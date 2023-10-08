@@ -1,5 +1,5 @@
 import "./SocialSignup.css";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { useContext } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsGoogle } from "react-icons/bs";
@@ -8,17 +8,19 @@ import { UserContext } from "../UserAuth/UserAuth";
 
 const SocialSignup = ({ location }) => {
 
-    const { googleLogIn, gitHubLogIn, user } = useContext(UserContext)
+    const { googleLogIn, gitHubLogIn, user, setToast } = useContext(UserContext)
     const navigate = useNavigate()
     console.log(location);
 
     const socialLogin = (socialMedia) => {
         socialMedia()
             .then(res => {
-                toast.success("successfuly logedIn")
+                setToast(toast.success("successfuly logedIn"))
                 navigate(location?.state ? location.state : "/")
-                
+
             })
+
+            .catch(err => toast.error(`${err}`))
     }
 
     return (
@@ -36,7 +38,9 @@ const SocialSignup = ({ location }) => {
                     <AiFillGithub></AiFillGithub> GitHub
                 </div>
             </div>
+            <Toaster></Toaster>
         </div>
+
     );
 };
 
