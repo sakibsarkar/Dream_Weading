@@ -22,12 +22,12 @@ const routes = createBrowserRouter([{
     },
     {
       path: "/login",
-      element: <Login></Login>
+      element: <AuthenticationPotector><Login></Login></AuthenticationPotector>
     }
     ,
     {
       path: "/signup",
-      element: <SignUp></SignUp>
+      element: <AuthenticationPotector><SignUp></SignUp></AuthenticationPotector>
     },
     {
       path: "/shop",

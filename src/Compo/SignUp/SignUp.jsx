@@ -12,17 +12,17 @@ const SignUp = () => {
         e.preventDefault()
         const { email, password, name, confirm } = e.target
         const checkCapital = /[A-Z]/;
-        const checkNumber = /\d/
+        const chekSpeacialcharacterr = /[\W_]/
         console.log(password.value)
         if (password.value.length < 6) {
-            return toast.error("password should more than 6 charetters")
+            return toast.error("password should more than 6 charaters")
         }
         if (!checkCapital.test(password.value)) {
             return toast.error("password should conatin atleast one capital latter")
         }
 
-        if (!checkNumber.test(password.value)) {
-            return toast.error("password should conatin atleast one number")
+        if (!chekSpeacialcharacterr.test(password.value)) {
+            return toast.error("password should conatin atleast one special character")
         }
 
         if (password.value !== confirm.value) {
@@ -31,10 +31,10 @@ const SignUp = () => {
 
         createUserWithEmail(email.value, password.value)
             .then(res => {
-                navigate(location?.state ? location.state : "/")
                 updateProfile(res.user, {
                     displayName: name.value
                 })
+                navigate(location?.state ? location.state : "/")
 
             })
             .catch(err => console.log(err))

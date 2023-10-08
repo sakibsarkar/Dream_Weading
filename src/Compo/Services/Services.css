@@ -31,7 +31,16 @@
 }
 
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+    .serviceCon {
+        padding: 70px 0;
+    }
+
+    .allService {
+        grid-template-columns: repeat(1, 360px)
+    }
+
+}
 
 @media screen and (min-width: 401px) and (max-width: 800px) {
     .serviceCon {

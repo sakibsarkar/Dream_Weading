@@ -123,6 +123,40 @@ nav ul li:hover::after {
 
 
 
+@media screen and (max-width: 400px) {
+
+    nav {
+        position: relative;
+        padding: 20px;
+    }
+
+    nav .navLinks {
+        display: none;
+
+
+    }
+
+    nav h1 {
+        display: none;
+    }
+
+    .menubar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        left: 25px;
+        bottom: -230px;
+        z-index: 99;
+
+    }
+
+    .Xicon {
+        font-size: 20px;
+        display: flex;
+    }
+
+}
 
 @media screen and (min-width: 400px) and (max-width: 650px) {
 
