@@ -1,4 +1,5 @@
 import "./index.css";
+import Error from "./Compo/Error/Error";
 import Home from "./Compo/Home/Home";
 import HomePageContent from "./Compo/HomePageContent/HomePageContent";
 import Login from "./Compo/Login/Login";
@@ -16,14 +17,15 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const routes = createBrowserRouter([{
   path: "/",
   element: <Home></Home>,
+  errorElement: <Error></Error>,
   children: [
     {
       path: "/",
-      element: <HomePageContent></HomePageContent>
+      element: <HomePageContent></HomePageContent>,
     },
     {
       path: "/login",
-      element:<Login></Login>
+      element: <Login></Login>
     }
     ,
     {
@@ -42,7 +44,7 @@ const routes = createBrowserRouter([{
       path: "/serviceDetail/:id",
       loader: () => fetch("https://sakibsarkar.github.io/assignment-9-product_API/service.json"),
       element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
-    }
+    },
 
 
   ]

@@ -1,0 +1,29 @@
+.errorCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+.errorCon img {
+    width: 350px;
+}
+
+.goBack {
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background: #00000000;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.goBack:hover {
+    background: black;
+    color: white;
+}
