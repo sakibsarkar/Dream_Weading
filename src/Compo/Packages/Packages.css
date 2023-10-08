@@ -117,6 +117,24 @@
 
 }
 
+
+.last {
+    background-color: #e0f1ad9c;
+}
+
+
+.last button {
+    background-color: #fb5e90;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.last button:hover {
+    background-color: #fb5e9000;
+    color: #fb5e90;
+    border: 1px solid #fb5e90;
+}
+
 /* font-family: 'Cormorant Garamond', serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Dancing Script', cursive; */
