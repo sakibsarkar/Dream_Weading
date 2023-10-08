@@ -26,7 +26,7 @@ const Contact = () => {
                     </div>
 
                     <div className="textArea">
-                        <textarea name=""></textarea>
+                        <textarea name="" placeholder="YOUR MESSEGE"></textarea>
                     </div>
                 </div>
                 <button onClick={() => toast.success("Thanks for reaching us")}>SEND</button>
