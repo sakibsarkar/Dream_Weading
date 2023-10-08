@@ -7,15 +7,15 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
 const SignUp = () => {
-    const { createUserWithEmail, user, setUser, location } = useContext(UserContext)
+    const { createUserWithEmail, user, setUser, location, setWaitForUser } = useContext(UserContext)
     const [eye, SetEye] = useState(false)
     const navigate = useNavigate()
+
     const handleRegister = (e) => {
         e.preventDefault()
         const { email, password, name, confirm, picture } = e.target
         const checkCapital = /[A-Z]/;
-        const chekSpeacialcharacterr = /[\W_]/
-        console.log(password.value)
+        const chekSpeacialcharacter = /[\W_]/
         if (password.value.length < 6) {
             return toast.error("password should more than 6 charaters")
         }
@@ -23,7 +23,7 @@ const SignUp = () => {
             return toast.error("password should conatin atleast one capital latter")
         }
 
-        if (!chekSpeacialcharacterr.test(password.value)) {
+        if (!chekSpeacialcharacter.test(password.value)) {
             return toast.error("password should conatin atleast one special character")
         }
 
@@ -33,14 +33,19 @@ const SignUp = () => {
 
         createUserWithEmail(email.value, password.value)
             .then(res => {
-                updateProfile(res.user, {
-                    displayName: name.value,
-                    photoURL: picture.value
+                updateProfile(res.user,{
+                    displayName:name.value,
+                    photoURL:picture.value
                 })
+                .then(res =>setWaitForUser(false) )
+                
+                
+                toast.success("succesfully loged in")
                 navigate(location?.state ? location.state : "/")
 
             })
             .catch(err => toast.error(`${err}`))
+
 
 
 

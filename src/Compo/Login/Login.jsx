@@ -20,6 +20,7 @@ const Login = () => {
         e.preventDefault()
         const { email, password } = e.target
         signInWithEmail(email.value, password.value)
+        toast.success("succesfully loged in")
             .then(res => {
                 navigate(location?.state ? location.state : "/")
             })

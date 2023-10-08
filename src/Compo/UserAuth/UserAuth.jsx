@@ -8,6 +8,7 @@ const UserAuth = ({ children }) => {
 
     const [user, setUser] = useState({})
     const [loading, setLoading] = useState(true)
+    const [waitForUser, setWaitForUser] = useState(true)
     const [location, setlocation] = useState({})
     const googleLogIn = () => {
         setLoading(true)
@@ -36,13 +37,26 @@ const UserAuth = ({ children }) => {
     }
 
     useEffect(() => {
-        onAuthStateChanged(auth, (User) => {
-            setUser(User)
-            setLoading(false)
 
-        })
 
-    }, [user])
+        if (waitForUser) {
+            onAuthStateChanged(auth, (User) => {
+                setUser(User)
+                setLoading(false)
+                console.log(waitForUser);
+            })
+        }
+
+        else {
+            onAuthStateChanged(auth, (User) => {
+                setUser(User)
+                setLoading(false)
+
+            })
+
+        }
+
+    }, [waitForUser])
     const authentications = {
         googleLogIn,
         gitHubLogIn,
@@ -53,7 +67,8 @@ const UserAuth = ({ children }) => {
         user,
         setUser,
         setlocation,
-        location
+        location,
+        setWaitForUser
     }
 
 
