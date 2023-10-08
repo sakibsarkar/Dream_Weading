@@ -42,7 +42,7 @@ const routes = createBrowserRouter([{
     {
       path: "/serviceDetail/:id",
 
-      loader: () => fetch("/public/service.json"),
+      loader: () => fetch("https://sakibsarkar.github.io/assignment-9-product_API/service.json"),
       element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
     }
 

@@ -7,7 +7,7 @@ const Services = () => {
     const [myservices, setMyServices] = useState([])
     const { user } = useContext(UserContext)
     useEffect(() => {
-        fetch("/public/service.json")
+        fetch("https://sakibsarkar.github.io/assignment-9-product_API/service.json")
             .then(res => res.json())
             .then(data => setMyServices(data))
     }, [])
