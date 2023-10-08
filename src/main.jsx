@@ -3,6 +3,7 @@ import AuthenticationPotector from "./Compo/AuthenticationPotector/Authenticatio
 import Home from "./Compo/Home/Home";
 import HomePageContent from "./Compo/HomePageContent/HomePageContent";
 import Login from "./Compo/Login/Login";
+import Packages from "./Compo/Packages/Packages";
 import PrivateRoute from "./Compo/PrivateRoute/PrivateRoute";
 import Products from "./Compo/Products/Products";
 import React from "react";
@@ -32,6 +33,10 @@ const routes = createBrowserRouter([{
     {
       path: "/shop",
       element: <PrivateRoute><Products></Products></PrivateRoute>
+    },
+    {
+      path: "/packages",
+      element: <PrivateRoute><Packages></Packages></PrivateRoute>
     }
   ]
 }])
