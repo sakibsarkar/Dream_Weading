@@ -44,7 +44,6 @@ const UserAuth = ({ children }) => {
             onAuthStateChanged(auth, (User) => {
                 setUser(User)
                 setLoading(false)
-                console.log(waitForUser);
             })
         }
 

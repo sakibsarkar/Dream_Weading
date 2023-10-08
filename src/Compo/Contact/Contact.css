@@ -1,0 +1,152 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 150px 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infos>div {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.contactIcons {
+    color: white;
+    background: #3b3e33;
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.infos p {
+    font-size: 18px;
+    width: 213px;
+}
+
+.input {
+    display: flex;
+    gap: 18px;
+}
+
+.clientData {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin: 15px 0 0 0;
+}
+
+.input input {
+    height: 50px;
+    border: 1px solid #e1e1e1;
+    width: 336px;
+    font-size: 14px;
+    color: #444444;
+    outline: none;
+    padding-left: 20px;
+}
+
+.textArea textarea {
+    width: 714px;
+    font-size: 14px;
+    border: 1px solid #e1e1e1;
+    color: #444444;
+    resize: none;
+    height: 84px;
+    padding-left: 20px;
+    margin-bottom: 34px;
+    padding-top: 12px;
+    outline: none;
+}
+
+.rightSide button {
+    background-color: rgb(0 0 0);
+    transition: 0.5s;
+    border: 1px solid black;
+    color: white;
+    padding: 8px 29px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .contact {
+        flex-direction: column-reverse;
+    }
+
+    .leftSide {
+        margin: 72px 0 0 00;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textArea textarea {
+        width: 339px;
+    }
+
+    .input {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 750px) {
+
+    .contact {
+        flex-direction: column-reverse;
+    }
+
+    .leftSide {
+        margin: 72px 0 0 00;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textArea textarea {
+        width: 339px;
+    }
+
+    .input {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1070px) {
+
+    .contact {
+        flex-direction: column-reverse;
+    }
+
+    .leftSide {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {}
+
+@media screen and (min-width: 1921px) {}

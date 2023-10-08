@@ -1,4 +1,5 @@
 import "./index.css";
+import Contact from "./Compo/Contact/Contact";
 import Error from "./Compo/Error/Error";
 import Home from "./Compo/Home/Home";
 import HomePageContent from "./Compo/HomePageContent/HomePageContent";
@@ -45,6 +46,11 @@ const routes = createBrowserRouter([{
       loader: () => fetch("https://sakibsarkar.github.io/assignment-9-product_API/service.json"),
       element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
     },
+
+    {
+      path: "/contact",
+      element: <Contact></Contact>
+    }
 
 
   ]

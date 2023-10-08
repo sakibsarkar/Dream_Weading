@@ -27,9 +27,6 @@ const ServiceDetails = () => {
 
             </div>
 
-
-            <Toaster />
-
         </div>
     );
 };

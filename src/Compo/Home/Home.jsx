@@ -6,10 +6,10 @@ import { Outlet } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
 const Home = () => {
-    // const { toast } = useContext(UserContext)
-    // if (toast) {
-    //     toast
-    // }
+    const { toast } = useContext(UserContext)
+    if (toast) {
+        toast
+    }
     return (
         <div>
             <Nav></Nav>

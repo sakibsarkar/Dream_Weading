@@ -10,7 +10,7 @@ const SocialSignup = ({ location }) => {
 
     const { googleLogIn, gitHubLogIn, user, setToast } = useContext(UserContext)
     const navigate = useNavigate()
-    console.log(location);
+
 
     const socialLogin = (socialMedia) => {
         socialMedia()

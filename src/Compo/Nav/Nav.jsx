@@ -26,7 +26,7 @@ const Nav = () => {
                 <li><NavLink className={"links"} to={"/"}>Home</NavLink></li>
                 <li><NavLink className={"links"} to={"/shop"}>Our Shop</NavLink></li>
                 <li><NavLink className={"links"} to={"/packages"}>Packages</NavLink></li>
-                <li><NavLink className={"links"} to={"/photograps"}>Potographs</NavLink></li>
+                <li><NavLink className={"links"} to={"/contact"}>Contact</NavLink></li>
 
                 <div className="authentication Xsection">
                     <NavLink to={"/login"} className={"authLinks"}>Log in</NavLink>
@@ -41,7 +41,7 @@ const Nav = () => {
                     <li><NavLink className={"links"} to={"/"}>Home</NavLink></li>
                     <li><NavLink className={"links"} to={"/shop"}>Our Shop</NavLink></li>
                     <li><NavLink className={"links"} to={"/packages"}>Packages</NavLink></li>
-                    <li><NavLink className={"links"} to={"/photograps"}>Potographs</NavLink></li>
+                    <li><NavLink className={"links"} to={"/contact"}>Contact</NavLink></li>
                 </ul> : ""
             }
 
