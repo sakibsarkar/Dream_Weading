@@ -1,0 +1,27 @@
+.cleverCon {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    gap: 30px;
+    padding: 0 20px 187px 20px;
+    text-align: center;
+}
+
+.cleverCon img {
+    width: 350px;
+}
+
+.cleverCon .home {
+    border: 1px solid black;
+    padding: 10px 32px;
+    color: black;
+    transition: 0.4s;
+}
+
+.cleverCon .home:hover {
+    background-color: black;
+    color: #ffffff;
+}

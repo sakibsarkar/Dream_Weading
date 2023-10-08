@@ -1,5 +1,4 @@
 import "./index.css";
-import AuthenticationPotector from "./Compo/AuthenticationPotector/AuthenticationPotector";
 import Home from "./Compo/Home/Home";
 import HomePageContent from "./Compo/HomePageContent/HomePageContent";
 import Login from "./Compo/Login/Login";
@@ -24,12 +23,12 @@ const routes = createBrowserRouter([{
     },
     {
       path: "/login",
-      element: <AuthenticationPotector><Login></Login></AuthenticationPotector>
+      element:<Login></Login>
     }
     ,
     {
       path: "/signup",
-      element: <AuthenticationPotector><SignUp></SignUp></AuthenticationPotector>
+      element: <SignUp></SignUp>
     },
     {
       path: "/shop",
@@ -41,7 +40,6 @@ const routes = createBrowserRouter([{
     },
     {
       path: "/serviceDetail/:id",
-
       loader: () => fetch("https://sakibsarkar.github.io/assignment-9-product_API/service.json"),
       element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
     }
