@@ -8,17 +8,15 @@ const Product = ({ product }) => {
         toast.success(`${NameProduct} successfully purchased`)
     }
     return (
-        <div className="productCard" data-aos="zoom-in"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" data-aos-mirror="true">
-            <div className="img">
+        <div className="productCard">
+            <div className="img" data-aos="fade-in">
                 <img src={productImg} alt="" />
             </div>
 
             <p className="productName">{productName}</p>
             <p className="price">$ {productPrice}</p>
 
-            <button className="buyBtn" onClick={() => handleBuy(productName)}>Buy Now <FiShoppingBag></FiShoppingBag></button>
+            <button className="buyBtn" onClick={() => handleBuy(productName)}>Buy Now<FiShoppingBag></FiShoppingBag></button>
 
             <Toaster
                 position="top-center"

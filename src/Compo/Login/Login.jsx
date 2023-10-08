@@ -1,13 +1,15 @@
 import "./Login.css";
 import SocialSignup from "../SocialSignup/SocialSignup";
 import toast, { Toaster } from "react-hot-toast";
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserAuth/UserAuth";
 
 const Login = () => {
     const { signInWithEmail, setlocation } = useContext(UserContext)
     const location = useLocation()
+    const [eye, SetEye] = useState(false)
 
     setlocation(location)
     const navigate = useNavigate()
@@ -37,7 +39,8 @@ const Login = () => {
                 </div>
                 <div className="inputCon">
                     <input className="inputs" type="email" placeholder="EMAIL" name="email" />
-                    <input className="inputs" type="Password" placeholder="PASSWORD" name="password" />
+                    <input className="inputs" type={eye ? "text" : "password"} placeholder="PASSWORD" name="password" />
+                    <div className="logEye" onClick={() => SetEye(!eye)}>{eye ? < AiOutlineEye /> : <AiOutlineEyeInvisible />}</div>
                 </div>
                 <button type="submit">Log In</button>
                 <div className="toggle">

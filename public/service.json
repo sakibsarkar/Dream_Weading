@@ -4,41 +4,53 @@
     "serviceName": "PHOTO & VIDEO",
     "icon": "https://i.ibb.co/SNVc1rT/si-1.png",
     "image": "https://i.ibb.co/gV0tt8c/IMG-9089-fotor-20231006225616.jpg",
-    "description": "Let our expert photographers and videographers turn your wedding into a visual masterpiece."
+    "description": "Capture the magic of your wedding day with the artistry of our professional photographers and videographers.",
+    "price": "$2000",
+    "more_details": "Our Photo & Video service is dedicated to preserving the precious moments of your wedding. Our expert team uses state-of-the-art equipment to ensure every smile, every tear, and every dance move is captured in stunning detail. From candid shots to beautifully choreographed videos, we turn your wedding into a visual masterpiece. Our personalized approach ensures that we understand your vision, and our experienced team delivers memories that will last a lifetime. Additionally, we offer engagement photo sessions and can customize packages to include pre-wedding events, post-wedding photo shoots, and even create cinematic highlight reels that tell the unique story of your love."
   },
   {
     "id": 2,
     "serviceName": "CATERING",
     "icon": "https://i.ibb.co/1Mnf6Zh/si-3.png",
     "image": "https://i.ibb.co/cFVpHLZ/service-grid-6.jpg",
-    "description": "Our catering service is dedicated to delighting your senses and elevating your wedding experience."
+    "description": "Delight your palate and elevate your wedding experience with our dedicated catering service.",
+    "price": "$5000",
+    "more_details": "Our Catering service is not just about serving food; it's about creating a culinary experience that complements the joy of your wedding day. Our chefs craft a menu tailored to your preferences, using the finest ingredients to tantalize your taste buds and leave a lasting impression on your guests. We take care of every detail, from food presentation to exceptional service, ensuring that your wedding celebration is a feast for all the senses. Our catering services also include dietary accommodations, themed menus, and the option for food tastings to finalize your selections. We can create a culinary journey that reflects your cultural background or incorporates unique and innovative dishes."
   },
   {
     "id": 3,
     "serviceName": "LIVE MUSIC AND DJ",
     "icon": "https://i.ibb.co/0YyNQ7K/si-4.png",
     "image": "https://i.ibb.co/TtQHfRp/mg-5091-r-JASm-Ie-OU-fotor-20231006224925.jpg",
-    "description": "Elevate the rhythm of your wedding with our live music and DJ services."
+    "description": "Set the perfect rhythm for your wedding with the electrifying beats of our live music and DJ services.",
+    "price": "$3000",
+    "more_details": "Elevate the atmosphere of your wedding with our Live Music and DJ service. Our talented musicians and DJs bring energy and style to your celebration, ensuring that every moment is accompanied by the perfect soundtrack. From romantic melodies to dance-floor hits, we create an unforgettable musical experience for you and your guests. Our extensive repertoire and ability to read the crowd guarantee a night filled with joy and dancing. We also offer consultation sessions to curate a playlist that reflects your musical taste and creates the ambiance you desire. Our live musicians can perform acoustic versions of your favorite songs for a more intimate touch."
   },
   {
     "id": 4,
     "serviceName": "BRIDE MAKEUP",
     "icon": "https://i.ibb.co/9TDLnW8/si-2.png",
     "image": "https://i.ibb.co/bsNwvdy/cosmetics-fotor-20231006224616.jpg",
-    "description": "Our bridal makeup services are dedicated to making you feel confidently beautiful on your special day."
+    "description": "Feel confidently beautiful on your special day with our expert bridal makeup services.",
+    "price": "$800",
+    "more_details": "Our Bride Makeup service is all about enhancing your natural beauty and creating a look that reflects your style. Our skilled makeup artists use high-quality products to ensure a flawless and long-lasting finish. From subtle elegance to bold glamour, we tailor our makeup to make you feel confidently beautiful on your special day. We offer personalized consultations to understand your preferences, and our team works meticulously to create a look that enhances your unique features. Additionally, we provide touch-up services during the event and can accommodate special requests for bridal party makeup. Our makeup artists stay updated on the latest trends to offer you a timeless and fashionable look."
   },
   {
     "id": 5,
     "serviceName": "HONEYMOONS",
     "icon": "https://i.ibb.co/wyrZx8L/si-6.png",
     "image": "https://i.ibb.co/fkkSwCh/honeymoon-packages-fotor-20231006225112.jpg",
-    "description": "Embark on the journey of a lifetime with our honeymoon planning services."
+    "description": "Embark on a journey of love and adventure with our meticulously planned honeymoon experiences.",
+    "price": "$4000",
+    "more_details": "Our Honeymoon service is designed to create the perfect start to your married life. From exotic destinations to romantic getaways, we curate experiences that match your dreams. Whether you seek relaxation on a sun-kissed beach or adventure in a vibrant city, we ensure that your honeymoon is a journey of love and unforgettable moments. Our travel experts handle all the details, from accommodation to activities, allowing you to focus on creating memories that will last a lifetime. Additionally, we offer honeymoon registry services, allowing your guests to contribute to your dream honeymoon. We can arrange surprise romantic experiences at your destination to make your honeymoon even more special."
   },
   {
     "id": 6,
     "serviceName": "WEDDING CAKE",
     "icon": "https://i.ibb.co/10SrFFW/ci-4.png",
     "image": "https://i.ibb.co/4YJs3q0/service-grid-5.jpg",
-    "description": "Indulge in sweetness with our exquisite wedding cake service."
+    "description": "Indulge in sweetness and elegance with our exquisite wedding cake service.",
+    "price": "$1000",
+    "more_details": "Our Wedding Cake service is a sweet celebration of your love. Our skilled bakers craft delicious and visually stunning cakes that become the centerpiece of your reception. From classic tiers to avant-garde designs, we create cakes that not only satisfy your taste buds but also add a touch of sweetness to your wedding day memories. We offer a variety of flavors and designs, and our team works closely with you to ensure that your wedding cake is not only delicious but also a work of art. Additionally, we provide cake tasting sessions, and our designers can create cakes that match your wedding theme or personal style. We can incorporate personalized cake toppers, edible flowers, and even interactive dessert stations for a memorable culinary experience."
   }
 ]

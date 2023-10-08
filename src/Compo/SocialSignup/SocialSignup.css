@@ -28,3 +28,10 @@
     width: 60%;
 
 }
+
+@media screen and (max-width: 530px) {
+
+    .socialSite {
+        width: 300px;
+    }
+}

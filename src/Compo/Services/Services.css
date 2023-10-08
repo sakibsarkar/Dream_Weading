@@ -25,7 +25,7 @@
 .allService {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    gap: 20px;
+    gap: 60px 20px;
     margin: 50px 0 0 0;
     justify-content: center;
 }

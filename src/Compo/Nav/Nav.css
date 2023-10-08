@@ -99,6 +99,7 @@ nav ul li:hover::after {
 
 .user img {
     width: 42px;
+    height: 42px;
     border-radius: 50%;
 }
 

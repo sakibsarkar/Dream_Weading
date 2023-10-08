@@ -2,9 +2,9 @@ import "./Service.css";
 import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
-    const { serviceName, icon, image, description } = service ? service : {}
+    const { serviceName, icon, image, description, id, price } = service ? service : {}
     return (
-        <Link>
+        <Link to={`/serviceDetail/${id}`}>
 
             <div className="service" data-aos="fade-up">
                 <img src={image} alt="" />
@@ -16,9 +16,16 @@ const Service = ({ service }) => {
                     <p>{serviceName}</p>
                 </div>
 
-                <div className="btn">
-                    <button className="view">View Details</button>
+
+                <div className="bottomDetails">
+                    <h1 className="description">{description}</h1>
+
+                    <div>
+                        <p>{price}</p>   <button className="btn">View Details</button>
+                    </div>
                 </div>
+
+
             </div>
         </Link>
 

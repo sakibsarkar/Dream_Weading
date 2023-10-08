@@ -8,6 +8,7 @@ import PrivateRoute from "./Compo/PrivateRoute/PrivateRoute";
 import Products from "./Compo/Products/Products";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import ServiceDetails from "./Compo/ServiceDetails/ServiceDetails";
 import Services from "./Compo/Services/Services";
 import SignUp from "./Compo/SignUp/SignUp";
 import UserAuth from "./Compo/UserAuth/UserAuth";
@@ -37,7 +38,15 @@ const routes = createBrowserRouter([{
     {
       path: "/packages",
       element: <PrivateRoute><Packages></Packages></PrivateRoute>
+    },
+    {
+      path: "/serviceDetail/:id",
+
+      loader: () => fetch("/public/service.json"),
+      element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
     }
+
+
   ]
 }])
 

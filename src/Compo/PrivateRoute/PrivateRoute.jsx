@@ -5,7 +5,6 @@ import { UserContext } from "../UserAuth/UserAuth";
 const PrivateRoute = ({ children }) => {
     const { user } = useContext(UserContext)
     const location = useLocation()
-    console.log(location)
     return (
         <>
             {
