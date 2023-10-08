@@ -34,6 +34,9 @@ const SignUp = () => {
 
         createUserWithEmail(email.value, password.value)
             .then(res => {
+                navigate(location?.state ? location.state : "/")
+                toast.success("succesfully loged in")
+
                 updateProfile(res.user, {
                     displayName: name.value,
                     photoURL: picture.value
@@ -41,8 +44,6 @@ const SignUp = () => {
                     .then(res => setWaitForUser(false))
 
 
-                toast.success("succesfully loged in")
-                navigate(location?.state ? location.state : "/")
 
             })
             .catch(err => toast.error(`${err}`))
@@ -55,10 +56,10 @@ const SignUp = () => {
         <>
             {
                 user ?
-                    <Clever></Clever> 
+                    <Clever></Clever>
 
                     :
-                    
+
                     <div className="logInCon">
                         <form onSubmit={handleRegister}>
                             <div className="heading">

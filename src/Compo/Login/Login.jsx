@@ -11,6 +11,7 @@ const Login = () => {
     const { signInWithEmail, setlocation, user } = useContext(UserContext)
     const location = useLocation()
     const [eye, SetEye] = useState(false)
+    setlocation(location)
 
     const navigate = useNavigate()
     const handlesubmit = (e) => {
@@ -37,7 +38,7 @@ const Login = () => {
                         <form onSubmit={handlesubmit}>
                             <div className="heading">
                                 <h1>
-                                    Login in
+                                    Log In
                                 </h1>
                                 <p>Welcome to our enchanting world of wedding management! We are committed to making every moment extraordinary </p>
                             </div>
