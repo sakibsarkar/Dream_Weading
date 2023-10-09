@@ -1,0 +1,136 @@
+.reviewCon {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.reviewBanner {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+
+.reviewBanner img {
+    width: 100%;
+    filter: blur(3px);
+}
+
+.reviewBannerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.reviewBannerContent h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: #ff4e65;
+
+}
+
+.reviewBannerContent p {
+    width: 50%;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 21%;
+    gap: 20px;
+    padding: 20px;
+    width: 800px;
+    box-shadow: 0px 2px 16.8px 3.2px rgba(0, 38, 66, 0.08);
+    background: #e5e5e5;
+    color: #6a6f5a;
+    border-radius: 14px;
+
+
+
+
+}
+
+
+
+.heart {
+    color: rgb(255, 115, 138);
+}
+
+
+.topLvl {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.reaction {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+
+}
+
+
+.coupleName {
+    color: rgb(255, 141, 160);
+}
+
+.coupleInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.coupleInfo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.rating {
+    color: rgb(255, 136, 0);
+}
+
+
+
+
+
+@media screen and (max-width: 435px) {
+
+    .review {
+        width: 90vw;
+    }
+
+    .reaction {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 435px) and (max-width: 850px) {
+    .review {
+        width: 90vw;
+    }
+
+
+}

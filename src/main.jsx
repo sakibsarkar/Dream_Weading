@@ -9,6 +9,7 @@ import PrivateRoute from "./Compo/PrivateRoute/PrivateRoute";
 import Products from "./Compo/Products/Products";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Review from "./Compo/Review/Review";
 import ServiceDetails from "./Compo/ServiceDetails/ServiceDetails";
 import Services from "./Compo/Services/Services";
 import SignUp from "./Compo/SignUp/SignUp";
@@ -34,8 +35,8 @@ const routes = createBrowserRouter([{
       element: <SignUp></SignUp>
     },
     {
-      path: "/shop",
-      element: <Products></Products>
+      path: "/contact",
+      element: <Products><Contact></Contact></Products>
     },
     {
       path: "/packages",
@@ -48,8 +49,8 @@ const routes = createBrowserRouter([{
     },
 
     {
-      path: "/contact",
-      element: <PrivateRoute><Contact></Contact></PrivateRoute>
+      path: "/review",
+      element: <PrivateRoute><Review></Review></PrivateRoute>
     }
 
 

@@ -122,6 +122,10 @@ nav ul li:hover::after {
     display: none;
 }
 
+.xCon {
+    display: none;
+}
+
 
 
 @media screen and (max-width: 400px) {
@@ -232,6 +236,19 @@ nav ul li:hover::after {
 
     .Xsection {
         display: flex;
+    }
+
+    .resHide {
+        display: none;
+    }
+
+    .hideUser {
+        display: none;
+    }
+
+    .xCon {
+        display: flex;
+        gap: 30px;
     }
 
     .Ysection {

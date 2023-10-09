@@ -21,18 +21,42 @@ const Nav = () => {
 
             <div className="Xicon" onClick={() => setClick(!click)}>{click ? <RxCross2></RxCross2> : <AiOutlineMenu></AiOutlineMenu>}</div>
 
-            <h1>DREAM WEDDING</h1>
+            <h1 className="resHide">DREAM WEDDING</h1>
+
+            <div className="xCon">
+                <h1>DREAM WEDDING</h1>
+                {
+                    user ? 
+                    
+                    <div className="user">
+                    <img src={user.photoURL ? user.photoURL : "https://i.ibb.co/yfdJJLc/585e4beacb11b227491c3399.png"} alt="" />
+                    <p>{user.displayName ? user.displayName : ""}</p>
+                    <button style={{
+                        border: "1px solid black",
+                        padding: "5px 8px",
+                        background: "black",
+                        color: "white",
+                        cursor: "pointer"
+                    }} onClick={LogOut}>LOG OUT</button>
+                </div>
+                
+                : ""
+                }
+            </div>
+
             <ul className="navLinks">
                 <li><NavLink className={"links"} to={"/"}>Home</NavLink></li>
                 <li><NavLink className={"links"} to={"/contact"}>Contact</NavLink></li>
                 <li><NavLink className={"links"} to={"/review"}>Client Review</NavLink></li>
                 <li><NavLink className={"links"} to={"/packages"}>Packages</NavLink></li>
 
-                <div className="authentication Xsection">
-                    <NavLink to={"/login"} className={"authLinks"}>Log in</NavLink>
-                    <span>|</span>
-                    <NavLink to={"/signup"} className={"authLinks"}>Sign up</NavLink>
-                </div>
+                {
+                    user ? "" : <div className="authentication Xsection">
+                        <NavLink to={"/login"} className={"authLinks"}>Log in</NavLink>
+                        <span>|</span>
+                        <NavLink to={"/signup"} className={"authLinks"}>Sign up</NavLink>
+                    </div>
+                }
             </ul>
 
 
@@ -68,7 +92,7 @@ const Nav = () => {
 
 
 
-                        <div className="user">
+                        <div className="user hideUser">
                             <img src={user.photoURL ? user.photoURL : "https://i.ibb.co/yfdJJLc/585e4beacb11b227491c3399.png"} alt="" />
                             <p>{user.displayName ? user.displayName : ""}</p>
                             <button style={{
