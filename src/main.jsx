@@ -36,7 +36,7 @@ const routes = createBrowserRouter([{
     },
     {
       path: "/contact",
-      element: <Products><Contact></Contact></Products>
+      element: <PrivateRoute><Contact></Contact></PrivateRoute>
     },
     {
       path: "/packages",

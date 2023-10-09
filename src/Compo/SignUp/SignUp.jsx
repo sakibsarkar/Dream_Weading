@@ -34,14 +34,13 @@ const SignUp = () => {
 
         createUserWithEmail(email.value, password.value)
             .then(res => {
-                navigate(location?.state ? location.state : "/")
-                setToast(toast.success("succesfully Sign in"))
-
                 updateProfile(res.user, {
                     displayName: name.value,
                     photoURL: picture.value
                 })
                     .then(res => setWaitForUser(false))
+                navigate(location?.state ? location.state : "/")
+                setToast(toast.success("succesfully Sign in"))
 
 
 
