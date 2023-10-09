@@ -1,14 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Dancing+Script&family=Great+Vibes&family=Josefin+Sans&family=Raleway:ital@0;1&display=swap');
+
 .errorCon {
     display: flex;
     justify-content: center;
+    color: #75706d;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     gap: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
 }
 
-.errorCon img {
-    width: 350px;
+.fullWidth {
+    background: #fff6e9;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    height: 342px;
+    align-items: center;
+    flex-direction: column
+}
+
+.error {
+    font-size: 74px;
+    font-weight: 400;
+    font-family: 'Great Vibes', cursive;
 }
 
 .goBack {
@@ -26,4 +44,30 @@
 .goBack:hover {
     background: black;
     color: white;
+}
+
+.Xbtn {
+    display: none;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .goBack {
+        display: none;
+    }
+
+    .Xbtn {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 530px) {
+    .goBack {
+        display: none;
+    }
+
+    .Xbtn {
+        display: block;
+    }
 }

@@ -24,9 +24,9 @@ const Nav = () => {
             <h1>DREAM WEDDING</h1>
             <ul className="navLinks">
                 <li><NavLink className={"links"} to={"/"}>Home</NavLink></li>
-                <li><NavLink className={"links"} to={"/shop"}>Our Shop</NavLink></li>
-                <li><NavLink className={"links"} to={"/packages"}>Packages</NavLink></li>
                 <li><NavLink className={"links"} to={"/contact"}>Contact</NavLink></li>
+                <li><NavLink className={"links"} to={"/review"}>Client Review</NavLink></li>
+                <li><NavLink className={"links"} to={"/packages"}>Packages</NavLink></li>
 
                 <div className="authentication Xsection">
                     <NavLink to={"/login"} className={"authLinks"}>Log in</NavLink>
@@ -39,9 +39,9 @@ const Nav = () => {
             {
                 click ? <ul className="menubar">
                     <li><NavLink className={"links"} to={"/"}>Home</NavLink></li>
-                    <li><NavLink className={"links"} to={"/shop"}>Our Shop</NavLink></li>
-                    <li><NavLink className={"links"} to={"/packages"}>Packages</NavLink></li>
                     <li><NavLink className={"links"} to={"/contact"}>Contact</NavLink></li>
+                    <li><NavLink className={"links"} to={"/review"}>Client Review</NavLink></li>
+                    <li><NavLink className={"links"} to={"/packages"}>Packages</NavLink></li>
                 </ul> : ""
             }
 
