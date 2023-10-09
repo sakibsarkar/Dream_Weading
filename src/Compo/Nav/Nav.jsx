@@ -54,7 +54,7 @@ const Nav = () => {
                     user ? "" : <div className="authentication Xsection">
                         <NavLink to={"/login"} className={"authLinks"}>Log in</NavLink>
                         <span>|</span>
-                        <NavLink to={"/signup"} className={"authLinks"}>Sign up</NavLink>
+                        <NavLink to={"/signup"} className={"authLinks"}>Register</NavLink>
                     </div>
                 }
             </ul>
@@ -108,7 +108,7 @@ const Nav = () => {
                         <div className="authentication Ysection">
                             <NavLink to={"/login"} className={"authLinks"}>Log in</NavLink>
                             <span>|</span>
-                            <NavLink to={"/signup"} className={"authLinks"}>Sign up</NavLink>
+                            <NavLink to={"/signup"} className={"authLinks"}>Register</NavLink>
                         </div>
 
             }

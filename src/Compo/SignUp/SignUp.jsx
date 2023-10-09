@@ -40,7 +40,7 @@ const SignUp = () => {
                 })
                     .then(res => setWaitForUser(false))
                 navigate(location?.state ? location.state : "/")
-                setToast(toast.success("succesfully Sign in"))
+                setToast(toast.success("succesfully register"))
 
 
 
@@ -63,7 +63,7 @@ const SignUp = () => {
                         <form onSubmit={handleRegister}>
                             <div className="heading">
                                 <h1>
-                                    Sign UP
+                                    Register
                                 </h1>
                                 <p>Welcome to our enchanting world of wedding management! We are committed to making every moment extraordinary </p>
                             </div>
@@ -75,7 +75,7 @@ const SignUp = () => {
                                 <div className="eye" onClick={() => SetEye(!eye)}>{eye ? < AiOutlineEye /> : <AiOutlineEyeInvisible />}</div>
                                 <input className="inputs" required type="password" placeholder="CONFIRM PASSWORD" name="confirm" />
                             </div>
-                            <button type="submit">Sign Up</button>
+                            <button type="submit">Register</button>
                             <div className="toggle">
                                 <h1>Already have account? go to <Link style={{ color: "#fd457f", textDecoration: "underline" }} to={"/login"}>Log In</Link></h1>
                             </div>

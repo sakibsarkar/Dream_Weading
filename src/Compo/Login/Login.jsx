@@ -50,7 +50,7 @@ const Login = () => {
                             </div>
                             <button type="submit">Log In</button>
                             <div className="toggle">
-                                <h1>New here? go to <Link style={{ color: "#fd457f", textDecoration: "underline" }} to={"/signUp"}>Sign Up</Link></h1>
+                                <h1>New here? go to <Link style={{ color: "#fd457f", textDecoration: "underline" }} to={"/signUp"}>Register</Link></h1>
                             </div>
                         </form>
 
