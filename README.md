@@ -21,7 +21,7 @@ console.log(greetign);
 #### Answer: A
 
 <i> `A` is correct because the variable `greeting` is declared but never used and
-in the second line `greetign = {};` JavaScript will implicitly declare a global variable named `greetign` when we are trying to assign an empty object to it. In this case, the output will be an empty object as we declared `{}`</i>
+in the second line `greetign = {};` JavaScript will declare a global variable named `greetign` when we are trying to assign an empty object to it. In this case, the output will be an empty object as we declared `{}`</i>
 
 </p>
 </details>
