@@ -129,7 +129,7 @@ console.log(count);
 
 #### Answer: C 
 
-<i>in JavaScript `forEach` method iterates every element on the array , forEach mehod executes a callback function, in this case the callback function is `num()`. this callback function is checking the the every element of the array, is it truthy or not. is it is truthy the the function is increasing the value of `count` by 1 and the initial value of count is 0, after completing forEach method the final value of `count` is three, so the 
+<i>in JavaScript `forEach` method iterates every element on the array , forEach mehod executes a callback function, in this case the callback function is `num()`. this callback function is checking the the every element of the array, is it truthy or not. if it is truthy the the function is increasing the value of `count` by 1 and the initial value of count is 0, after completing forEach method the final value of `count` is 3 because there is 3 truthy value in the `num` array , so the 
 `console.log(count)` give output 3</i>
 
 </p>
