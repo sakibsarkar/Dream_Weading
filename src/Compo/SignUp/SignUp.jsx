@@ -45,7 +45,7 @@ const SignUp = () => {
 
 
             })
-            .catch(err => toast.error(`${err}`))
+            .catch(err => setToast(toast.error(`${err}`)))
 
 
 
